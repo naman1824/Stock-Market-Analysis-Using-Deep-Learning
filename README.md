@@ -22,7 +22,7 @@ The following Python packages are required to run the project:
 
 To install the required packages, use the following command:
 
-pip install -r requirements.txt
+        •      pip install -r requirements.txt
 
 **Datasets**
 
@@ -32,30 +32,30 @@ The stock data is fetched using the Tiingo API for the stock ticker GOOG (Google
 
 1. Clone this repository:
 
-   https://github.com/naman1824/Stock-Market-Analysis-Using-Deep-Learning
+   	   •      https://github.com/naman1824/Stock-Market-Analysis-Using-Deep-Learning
 
 2. Setup the environment by installing depenedencies:
 
-   pip install -r requirements.txt
+	   •      pip install -r requirements.txt
 
 3. Download the stock price data using the Tiingo API(make sure you have an API key):
 
-   df = pdr.get_data_tiingo('GOOG', api_key='your_api_key_here')
-   df.to_csv('GOOG.csv')
+   	   •      df = pdr.get_data_tiingo('GOOG', api_key='your_api_key_here')
+           •      df.to_csv('GOOG.csv')
 
-4. Preprocess the data by normalizing and splitting it into training and testing sets.
+5. Preprocess the data by normalizing and splitting it into training and testing sets.
 
-5. Build and train the stacked LSTM model as described in the script:
+6. Build and train the stacked LSTM model as described in the script:
 
-   from tensorflow.keras.models import Sequential
-   from tensorflow.keras.layers import LSTM, Dense
+   	   •      from tensorflow.keras.models import Sequential
+	   •      from tensorflow.keras.layers import LSTM, Dense
 
-6. Use the trained model to predict the stock prices for the next 30 days.
+7. Use the trained model to predict the stock prices for the next 30 days.
 	
-7. Plot the results to visualize the predictions:
+8. Plot the results to visualize the predictions:
 
-   plt.plot(predictions)
-   plt.show()
+   	   •      plt.plot(predictions)
+   	   •      plt.show()
 
 **File Structure**
 
